@@ -1,0 +1,67 @@
+.bigbox {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+}
+
+.center {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}
+
+.box1 {
+  border: 1px solid green;
+  padding: 8px;
+  color: blue;
+  font-size: 1rem;
+}
+
+.box2 {
+  border: 1px solid green;
+  padding: 8px;
+  color: red;
+  font-size: 1rem;
+}
+
+.box3 {
+  border: 1px solid green;
+  padding: 8px;
+  color: blue;
+  font-size: 1rem;
+}
+
+.box4 {
+  border: 1px solid green;
+  padding: 8px;
+  color: red;
+  font-size: 1rem;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.low {
+  margin: 20px;
+  margin-top: 0px;
+  border: 1px solid blue;
+  padding: 8px;
+  color: green;
+  font-size: 24px;
+}
+
+.title, .title_smaller {
+  color: green;
+  text-decoration: underline blue 1px;
+}
+.title_smaller {
+  padding: 1rem;
+  border: 1px solid red;
+  text-decoration: none;
+  margin-bottom: 0;
+}
+
+/*# sourceMappingURL=style.css.map */

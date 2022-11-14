@@ -1,0 +1,71 @@
+@use "module.scss" as module;
+$color: module.$md-color;
+$bd-color: module.$md-bd-color;
+$font-size: 1rem;
+
+@mixin border-color($bd-color){
+    border: 1px solid $bd-color;
+}
+@mixin text-style($color){
+    padding: 8px;
+    color: $color;
+    font-size: $font-size;
+}
+@mixin footer-style($color){
+    padding: 8px;
+    color: $color;
+    font-size: 24px;
+}
+.bigbox{
+    display: flex;
+    flex-direction: column;
+    $bd-color: red;
+    @include border-color($bd-color);
+}
+.center{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+.box1{
+    @include border-color($bd-color);
+    @include text-style($color);
+}
+.box2{
+    @include border-color($bd-color);
+    $color: red;
+    @include text-style($color);
+}
+.box3{
+    @include border-color($bd-color);
+    @include text-style($color);
+}
+.box4{
+    @include border-color($bd-color);
+    $color: red;
+    @include text-style($color);
+}
+.top{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.low{
+    margin: 20px;
+    margin-top: 0px;
+    $bd-color: $color;
+    @include border-color($bd-color);
+    $color: green;
+    @include footer-style($color);
+}
+.title{
+    color: $bd-color;
+    text-decoration: underline blue 1px;
+    &_smaller{
+        @extend .title;
+        padding: 1rem;
+        border: 1px solid red;
+        text-decoration: none;
+        margin-bottom: 0;
+    }
+}
